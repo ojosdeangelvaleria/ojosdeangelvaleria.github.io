@@ -1030,4 +1030,32 @@ h2 { color : white
     border-radius: 50%;
     box-shadow: 20px  20px 150px #f20044;
 }
+
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+}
+
+.fab-button {
+  padding: 12px 18px;
+  border: none;
+  background-color: #FF69B4; /* Rosa claro para evocar romanticismo */
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave y ligeramente aumentada */
+  transform: scale(1); /* Escala inicial para el botón */
+}
+
+.fab-button:hover {
+  background-color: #FF1493; /* Rosa más intenso al pasar el mouse */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón al pasar el mouse */
+}
+
   
